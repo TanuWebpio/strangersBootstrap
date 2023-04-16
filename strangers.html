@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>iCoder - Heaven for Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">HealthyWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Parent's Have Only Girl Child</a>
+                        <a class="dropdown-item" href="#">Some adults childs have no parent's</a>
+                        <a class="dropdown-item" href="#">People's gone in depression</a>
+                        <a class="dropdown-item" href="#">Some child going to abroad and leave their parents alone </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Who can help join us</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#near">NearBy</a>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to HealthyWorld</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an HealthyWorld Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Creat Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="home">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.news18.com/ibnlive/uploads/2017/05/dementia_AFP.jpg?impolicy=website&amp;width=510&amp;height=356" height="60%" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to HealthyWorld</h2>
+                        <p>Here an adult support an oldee</p>
+                        <button class="btn btn-danger">care</button>
+                        <button class="btn btn-primary">Support</button>
+                        <button class="btn btn-success">piece</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_489308794_334853.jpg" height="60%" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to HealthyWorld</h2>
+                        <p>Be a supporter to othefa-rotate-180</p>
+                        <button class="btn btn-danger">care</button>
+                        <button class="btn btn-primary">support</button>
+                        <button class="btn btn-success">piece</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1057362316/photo/sustainable-community-concept.jpg?b=1&amp;s=170667a&amp;w=0&amp;k=20&amp;c=irETE0ULYvVul1FsVWE6xhWFWNLxh6RwT_lObIJfBso=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to HealthyWorld</h2>
+                        <p>Happy and happy world be like</p>
+                        <button class="btn btn-danger">care</button>
+                        <button class="btn btn-primary">support</button>
+                        <button class="btn btn-success">piece</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- 
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Global Conferences</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="thumb1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Learn Designing</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="https://source.unsplash.com/500x700/?tech,code,laptop" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">FrontEnd</strong>
+                        <h3 class="mb-0">Bootstrap Templates</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="thumb2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Python</strong>
+                        <h3 class="mb-0">Learn Python</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="thumb3.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container my-4" id="about">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">It all started with HealtyWorld Idea. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">How many people know? that how many people died due to loneliness? in our world? nobody have no idea about it right?
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://i.dailymail.co.uk/1s/2020/06/08/01/29342324-8397425-image-m-5_1591576545718.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">We started This HealthyWorld project in 2023<span class="text-muted">I'll make sure it will be helpfull for our world</span></h2>
+                <p class="lead">Those people who have no one in their life , no one to care, no one to support, there is no one so they make their account on this healthyWorld webpage. </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="https://i0.wp.com/www.techjunkie.com/wp-content/uploads/2019/04/How-to-find-someone%E2%80%99s-profile-on-Bumble1.jpg?fit=900%2C564&amp;ssl=1" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">So Comeonn Everyone help eachother<span class="text-muted">Make this world Happy</span></h2>
+                <p class="lead">Those people who want to help another people through this webpage make depressed people their friend, be supporter to them etc . So they can also join us by making account with HealthyWorld</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://previews.123rf.com/images/oneinchpunch/oneinchpunch1512/oneinchpunch151200017/49082436-group-of-people-supporting-each-others-concept-about-team-work-and-freindship.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2" id="navbarDropdown">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Only Daughter</strong>
+                    <h3 class="mb-0">Parent's Have Only Girl Child</h3>
+                    <div class="mb-1 text-body-secondary">April 14</div>
+                    <p class="card-text mb-auto">So in the natural course of things, the male advantage in numbers decreases over a lifetime, with women ultimately gaining the advantage in numbers.Parents live alone after their's daughter marriage and they have no support. No one
+                        to care them in old age.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/07/25190134/role-of-parent-after-marriage-compressor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Child's in Aborad</strong>
+                    <h3 class="mb-0">Some child going to abroad and leave their parents alone</h3>
+                    <div class="mb-1 text-body-secondary">April 14</div>
+                    <p class="mb-auto">As per the data provided by him in the Lok Sabha, the number of Indians enrolled in foreign varsities increased from 4.44 lakh in 2021 to 7.5 lakh in 2022. This data was provided by Sarkar in response to a question posed by MPs about
+                        the total number of Indians who are heading abroad to gain a higher education degree.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://d3it91zw76pwp5.cloudfront.net/wp-content/uploads/2022/09/How-much-money-can-parents-send-to-their-kids-abroad-1024x512.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">No Parent's</strong>
+                    <h3 class="mb-0">Some adults childs have no parent's</h3>
+                    <div class="mb-1 text-body-secondary">April 14</div>
+                    <p class="mb-auto">There are over 150,000,000 confirmed orphans in the world. To give a bit of a size comparison, that is over 20,000,000 more people than live in Japan, equal to the population of Russia, or about half the population of the United States.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://cdn.mind-diagnostics.org/uploads/mind-diagnostics/images/image/url/what-do-i-do-when-i-am-feeling-alone-and-need-someone-to-talk-to-1_.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Depression</strong>
+                    <h3 class="mb-0">People's gone in depression</h3>
+                    <div class="mb-1 text-body-secondary">April 14</div>
+                    <p class="mb-auto">An estimated 3.8% of the population experience depression, including 5% of adults (4% among men and 6% among women), and 5.7% of adults older than 60 years. Approximately 280 million people in the world have depression (1). Depression
+                        is about 50% more common among women than among men. Worldwide, more than 10% of pregnant women and women who have just given birth experience depression (2). More than 700 000 people die due to suicide every year. Suicide is the
+                        fourth leading cause of death in 15–29-year-olds.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://c.ndtvimg.com/2018-11/sgelgbcg_depression_625x300_22_November_18.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Come on Youth</strong>
+                    <h3 class="mb-0">Who can help join us</h3>
+                    <div class="mb-1 text-body-secondary">April 14</div>
+                    <p class="mb-auto">Those people's who want to help depressed and oldes people join us and make a healthy and happily world by being a supporter to them.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://brilliantio.com/wp-content/uploads/2022/03/what-can-we-do-to-make-a-peaceful-world.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select your Categories</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Depressed</option>
+                    <option>Alone Parent's</option>
+                    <option>Alone Adults</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">Are you a Helper?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">Are you in some categories?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Tell us about yourself</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea2">Elaborate Your Concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+    <div class="container" id="near">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13989.155979842018!2d79.00798384999999!3d28.7706381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1681633722786!5m2!1sen!2sin" width="100%" height="40%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body></html>
